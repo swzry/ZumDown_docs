@@ -16,3 +16,4 @@ ZumDown，全称ZRY Universal MarkDwon，是一个Markdown方言，通用于swzr
 
 * **开发者：** 这部分内容针对想使用ZumDown语言标准或者渲染器源代码进行利用或二次开发的人员。
 
+友情提示：莫要把ZumDown打成ZunDown了←_←
