@@ -16,7 +16,9 @@ ZumDown，全称ZRY Universal MarkDwon，是一个Markdown方言，通用于swzr
 
 * **开发者：** 这部分内容针对想将ZumDown语言标准或者渲染器源代码进行利用或二次开发的人员。
 
-友情提示：莫要把ZumDown打成ZunDown了←_←
+**友情提示：** 莫要把ZumDown打成ZunDown了←_←
+
+**说明：** 本文档除README.md以外均用ZumDown书写，README.md为GitHub Markdown方言Sundown书写，为的是能在Git平台上正确显示，显然在Git平台上ZumDown显示效果会不正确，因为没有ZumDown渲染引擎。
 
 ## Reference
 
