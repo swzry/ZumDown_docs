@@ -25,4 +25,5 @@ ZumDown，全称ZRY Universal MarkDwon，是一个Markdown方言，通用于swzr
 * [Markdown 语法说明 (简体中文版)](http://wowubuntu.com/markdown/)
 * [Markdown——入门指南](http://www.jianshu.com/p/1e402922ee32/)
 * [Misaka Documentation](http://misaka.61924.nl/)
+* [Hoedown Examples](https://github.com/hoedown/hoedown/tree/master/test/MarkdownTest_1.0.3/Tests)
 * [ZumDown测试练习平台](http://demo.9zry.com/SuwakoMethod/)
