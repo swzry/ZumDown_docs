@@ -17,3 +17,10 @@ ZumDown，全称ZRY Universal MarkDwon，是一个Markdown方言，通用于swzr
 * **开发者：** 这部分内容针对想将ZumDown语言标准或者渲染器源代码进行利用或二次开发的人员。
 
 友情提示：莫要把ZumDown打成ZunDown了←_←
+
+## Reference
+
+* [Markdown 语法说明 (简体中文版)](http://wowubuntu.com/markdown/)
+* [Markdown——入门指南](http://www.jianshu.com/p/1e402922ee32/)
+* [Misaka Documentation](http://misaka.61924.nl/)
+* [ZumDown测试练习平台](http://demo.9zry.com/SuwakoMethod/)
