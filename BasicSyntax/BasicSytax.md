@@ -33,34 +33,34 @@
 ZumDown提供的一种可扩展高级块级元素，通常情况下使用一对三个\`号包围，第一行写Superblock的控制语句：
 
 ```code:zumdown
-    ```Superblock控制语句
-    块内容
-    ```
+	```Superblock控制语句
+	块内容
+	```
 ```
 
 Superblock控制语句用于指定该Superblock的类型和基本样式。如果该类型不含样式参数，直接写类型，例如注释：
 
 ```code:zumdown
-    ```comment
-    这是一些注释
-    ```
+	```comment
+	这是一些注释
+	```
 ```
 
 如果该类型含有样式参数，则格式为`类型:样式参数`，多个参数用逗号隔开：
 
 ```code:zumdown
-    ```Superblock类型:样式参数1,样式参数2,样式参数3,...
-    块内容
-    ```
+	```Superblock类型:样式参数1,样式参数2,样式参数3,...
+	块内容
+	```
 ```
 
 例如代码区块：
 
 ```code:zumdown
-    ```code:python
-    def foo():
-        return bar()
-    ```
+	```code:python
+	def foo():
+		return bar()
+	```
 ```
 
 由于Superblock是可扩展的，所以不同的渲染器，或者在不同的使用场合，可能存在具体的区别，因为渲染器的开发者或者使用了某个渲染器的网站会自己定义一些类型的Superblock。
@@ -93,11 +93,11 @@ Superblock控制语句用于指定该Superblock的类型和基本样式。如果
 
 ```code:zumdown
 
-    大标题
-    =============
+	大标题
+	=============
 
-    二级标题
-    -------------
+	二级标题
+	-------------
 
 ```
 
@@ -116,11 +116,11 @@ Superblock控制语句用于指定该Superblock的类型和基本样式。如果
 
 ```code:zumdown
 
-    # 这是 大标题
+	# 这是 大标题
 
-    ## 这是 二级标题
+	## 这是 二级标题
 
-    ###### 这是 六级标题
+	###### 这是 六级标题
 
 ```
 
@@ -142,18 +142,18 @@ Superblock控制语句用于指定该Superblock的类型和基本样式。如果
 
 ```code:zumdown
 
-    * 博丽灵梦
-    * 雾雨魔理沙
-    * 东风谷早苗
+	* 博丽灵梦
+	* 雾雨魔理沙
+	* 东风谷早苗
 
-    + 东方红魔乡
-    + 东方妖妖梦
-    + 东方萃梦想
-    + 东方永夜抄
+	+ 东方红魔乡
+	+ 东方妖妖梦
+	+ 东方萃梦想
+	+ 东方永夜抄
 
-    - 博丽神社
-    - 红魔馆
-    - 雾之湖
+	- 博丽神社
+	- 红魔馆
+	- 雾之湖
 
 ```
 
@@ -178,10 +178,10 @@ Superblock控制语句用于指定该Superblock的类型和基本样式。如果
 #### 有序列表
 
 ```code:zumdown
-    1. 一面道中
-    2. 一面BOSS
-    3. 二面道中
-    4. 二面BOSS
+	1. 一面道中
+	2. 一面BOSS
+	3. 二面道中
+	4. 二面BOSS
 ```
 
 ```panel
@@ -201,10 +201,10 @@ Superblock控制语句用于指定该Superblock的类型和基本样式。如果
 例如：
 
 ```code:zumdown
-    9. 一面道中
-    9. 一面BOSS
-    9. 二面道中
-    9. 二面BOSS
+	9. 一面道中
+	9. 一面BOSS
+	9. 二面道中
+	9. 二面BOSS
 ```
 
 ```panel
@@ -226,15 +226,15 @@ Superblock控制语句用于指定该Superblock的类型和基本样式。如果
 在一行中用三个以上的星号、减号或下划线来创建分割线，分割线中可以含有空白符。例：
 
 ```code:zumdown
-    - * *
+	- * *
 
-    ***
+	***
 
-    *****
+	*****
 
-    + - -
+	+ - -
 
-    ---------------------------------------
+	---------------------------------------
 ```
 
 ```panel
@@ -263,7 +263,7 @@ Superblock控制语句用于指定该Superblock的类型和基本样式。如果
 [Z神社](http://www.z-touhou.org)
 ```
 
-注意，在ZumDown中链接和SuperSpan是共用语法，作为链接，只允许http、https、mailto、ftp、ftps这几个协议，magnet等需渲染器权限配置允许才能使用，除此之外的内容可能会被作为SuperSpan解析。
+注意，在ZumDown中链接和SuperSpan是共用语法，作为链接，只允许http、https、mailto、ftp、ftps、git、svn这几个协议，magnet等需渲染器权限配置允许才能使用，除此之外的内容可能会被作为SuperSpan解析。
 
 在Markdown中链接还有一种叫`参考式`（目前介绍的这种叫`行内式`），在ZumDown中也是兼容的，但大家较少使用这种类型，所以在本文档中不再赘述。
 
@@ -283,7 +283,7 @@ Superblock控制语句用于指定该Superblock的类型和基本样式。如果
 使用一对星号`*`包裹内容来表示斜体，两对星号表示粗体：
 
 ```code:zumdown
-    突然 *警报* 大作，打破了这片宁静， **早苗** 和 **探女** 即刻转过身接手操控。
+	突然 *警报* 大作，打破了这片宁静， **早苗** 和 **探女** 即刻转过身接手操控。
 ```
 
 ```panel
@@ -294,7 +294,7 @@ Superblock控制语句用于指定该Superblock的类型和基本样式。如果
 使用一对下划线`_`来使文字带下划线，使用两对`~`来表示删除线：
 
 ```code:zumdown
-    答案是 _0个人_ ， ~~因为幻想乡没有巴士~~
+	答案是 _0个人_ ， ~~因为幻想乡没有巴士~~
 ```
 
 ```panel
@@ -309,13 +309,72 @@ Superblock控制语句用于指定该Superblock的类型和基本样式。如果
 使用一对\`包裹，可以在行内插入代码。这个是继承自Markdown的行内代码功能。
 
 ```code:zumdown
-    按`Win`+`R`打开`运行`，输入`regedit.exe`并回车，打开`注册表编辑器`
+	按`Win`+`R`打开`运行`，输入`regedit.exe`并回车，打开`注册表编辑器`
 ```
 
 ```panel
 显示效果
 按`Win`+`R`打开`运行`，输入`regedit.exe`并回车，打开`注册表编辑器`
 ```
+
+#### 表格
+
+ZumDown兼容Markdown的表格功能，但这种表格写法很不友好（写例子的时候我已经发咆燥了不用谢），大概不会有太多人使用……在本文档中不再赘述具体用法，请参阅Markdown的相关文档资料。
+
+建议使用由ZumDown的Superblock提供的表格功能。
+
+在这里我们只提供一个范例：
+
+```code:zumdown
+	| 版本编号	| 作品名称										| 作者 						|
+	| --------- |:----------------------------------------------------------:| -------------------------------------:|
+	| TH 06.0	| 东方红魔乡 ～ the Embodiment of Scarlet Devil.		| 上海爱丽丝幻乐团				|
+	| TH 07.0	| 东方妖妖梦 ～ Perfect Cherry Blossom.				| 上海爱丽丝幻乐团				|
+	| TH 07.5	| 东方萃梦想 ～ Immaterial and Missing Power.		| 上海爱丽丝幻乐团、黄昏边境		|
+	| TH 08.0	| 东方永夜抄 ～ Imperishable Night.					| 上海爱丽丝幻乐团				|
+	| TH 09.0	| 东方花映塚 ～ Phantasmagoria of Flower View.		| 上海爱丽丝幻乐团				|
+	| TH 09.5	| 东方文花帖 ～ Shoot the Bullet.					| 上海爱丽丝幻乐团				|
+	| TH 10.0	| 东方风神录 ～ Mountain of Faith.					| 上海爱丽丝幻乐团				|
+	| TH 10.5	| 东方绯想天 ～ Scarlet Weather Rhapsody.			| 上海爱丽丝幻乐团、黄昏边境		|
+	| TH 11.0	| 东方地灵殿 ～ Subterranean Animism.				| 上海爱丽丝幻乐团				|
+	| TH 12.0	| 东方星莲船 ～ Undefined Fantastic Object.			| 上海爱丽丝幻乐团				|
+	| TH 12.3	| 东方非想天则 ～ 追寻特大型人偶之谜				| 上海爱丽丝幻乐团、黄昏边境		|
+	| TH 12.5	| Double Spoiler ～ 东方文花帖					| 上海爱丽丝幻乐团				|
+	| TH 12.8	| 妖精大战争 ～ 东方三月精						| 上海爱丽丝幻乐团、比良坂真琴	|
+	| TH 13.0	| 东方神灵庙 ～ Ten Desires.						| 上海爱丽丝幻乐团				|
+	| TH 13.5	| 东方心绮楼 ～ Hopeless Masquerade.				| 上海爱丽丝幻乐团、黄昏边境		|
+	| TH 14.0	| 东方辉针城 ～ Double Dealing Character.			| 上海爱丽丝幻乐团				|
+	| TH 14.3	| 弹幕天邪鬼　～ Impossible Spell Card.				| 上海爱丽丝幻乐团				|
+	| TH 14.5	| 东方深秘录　～ Urban Legend in Limbo.			| 上海爱丽丝幻乐团、黄昏边境		|
+	| TH 15.0	| 东方绀珠传　～ Legacy of Lunatic Kingdom.			| 上海爱丽丝幻乐团				|
+```
+
+```panel
+显示效果
+| 版本编号	| 作品名称										| 作者 						|
+| --------- |:----------------------------------------------------------:| -------------------------------------:|
+| TH 06.0	| 东方红魔乡 ～ the Embodiment of Scarlet Devil.		| 上海爱丽丝幻乐团				|
+| TH 07.0	| 东方妖妖梦 ～ Perfect Cherry Blossom.				| 上海爱丽丝幻乐团				|
+| TH 07.5	| 东方萃梦想 ～ Immaterial and Missing Power.		| 上海爱丽丝幻乐团、黄昏边境		|
+| TH 08.0	| 东方永夜抄 ～ Imperishable Night.					| 上海爱丽丝幻乐团				|
+| TH 09.0	| 东方花映塚 ～ Phantasmagoria of Flower View.		| 上海爱丽丝幻乐团				|
+| TH 09.5	| 东方文花帖 ～ Shoot the Bullet.					| 上海爱丽丝幻乐团				|
+| TH 10.0	| 东方风神录 ～ Mountain of Faith.					| 上海爱丽丝幻乐团				|
+| TH 10.5	| 东方绯想天 ～ Scarlet Weather Rhapsody.			| 上海爱丽丝幻乐团、黄昏边境		|
+| TH 11.0	| 东方地灵殿 ～ Subterranean Animism.				| 上海爱丽丝幻乐团				|
+| TH 12.0	| 东方星莲船 ～ Undefined Fantastic Object.			| 上海爱丽丝幻乐团				|
+| TH 12.3	| 东方非想天则 ～ 追寻特大型人偶之谜				| 上海爱丽丝幻乐团、黄昏边境		|
+| TH 12.5	| Double Spoiler ～ 东方文花帖					| 上海爱丽丝幻乐团				|
+| TH 12.8	| 妖精大战争 ～ 东方三月精						| 上海爱丽丝幻乐团、比良坂真琴	|
+| TH 13.0	| 东方神灵庙 ～ Ten Desires.						| 上海爱丽丝幻乐团				|
+| TH 13.5	| 东方心绮楼 ～ Hopeless Masquerade.				| 上海爱丽丝幻乐团、黄昏边境		|
+| TH 14.0	| 东方辉针城 ～ Double Dealing Character.			| 上海爱丽丝幻乐团				|
+| TH 14.3	| 弹幕天邪鬼　～ Impossible Spell Card.				| 上海爱丽丝幻乐团				|
+| TH 14.5	| 东方深秘录　～ Urban Legend in Limbo.			| 上海爱丽丝幻乐团、黄昏边境		|
+| TH 15.0	| 东方绀珠传　～ Legacy of Lunatic Kingdom.			| 上海爱丽丝幻乐团				|
+```
+
+**文档编写者：** 显示出来的缩进乱七八糟……我已经没脾气去整理了……建议使用由ZumDown的Superblock提供的表格功能。
 
 ## 与Markdown不兼容的特性
 
