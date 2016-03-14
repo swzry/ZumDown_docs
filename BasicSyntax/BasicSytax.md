@@ -69,6 +69,75 @@ Superblock控制语句用于指定该Superblock的类型和基本样式。如果
 * 基本Superblock功能
 * 在swzry.com旗下网站支持的Superblock内容
 
+### Superspan
+
+这是一种可扩展的行内高级元素，与Superblock不同的是，Superblock通常是块级元素。在ZumDown中，使用Markdown的链接语法`[链接名称](链接地址) "标题"`或者图片语法`![链接名称](链接地址) "标题"`来产生链接或图片时，协议头是受限的，例如链接仅允许http、https、ftp、ftps、git、svn、mailto，而图片仅允许http和https，如果一个链接或图片的协议头不符合该限制，则该链接按照Superspan来解析。
+
+示例：
+
+```code:zumdown
+	**这些是链接：**
+	[Z神社](http://www.z-touhou.org)
+	[ZRY's Git](https://git.swzry.com/)
+	[某个FTP服务器](ftp://example.com/)
+	[某个FTPS服务器](ftps://example.com/)
+	[某个E-mail地址](mailto:kishin@sagume.com)
+	[某个git仓库](git://example.com/)
+	[某个svn仓库](svn://example.com/)
+
+	**这些是图片：**
+	![这是本站的LOGO](http://static.swzry.com/img/logo_with_name.png)
+	![这个也是本站的LOGO](https://static.swzry.com/img/logo_with_name.png)
+
+	**而这些均是Superspan：**
+	![](glyphicon:plus)
+	![文字](color:#00ff00)
+	[](glyphicon:plus)
+	[文字](color:#00ff00)
+
+	**还有一些Superspan的结果也是链接：**
+	[小说平台测试词条](nswiki://test1/测试词条1/)
+```
+
+```panel
+显示效果
+**这些是链接：**
+[Z神社](http://www.z-touhou.org)
+[ZRY's Git](https://git.swzry.com/)
+[某个FTP服务器](ftp://example.com/)
+[某个FTPS服务器](ftps://example.com/)
+[某个E-mail地址](mailto:kishin@sagume.com)
+[某个git仓库](git://example.com/)
+[某个svn仓库](svn://example.com/)
+
+**这些是图片：**
+![这是本站的LOGO](http://static.swzry.com/img/logo_with_name.png)
+![这个也是本站的LOGO](https://static.swzry.com/img/logo_with_name.png)
+
+**而这些均是Superspan：**
+![](glyphicon:plus)
+![文字](color:#00ff00)
+[](glyphicon:plus)
+[文字](color:#00ff00)
+
+**还有一些Superspan的结果也是链接：**
+[小说平台测试词条](nswiki://test1/测试词条1/)
+```
+
+```alert:info
+**友情提示1：** 对于大部分Superspan来说，使用图片或链接的语法来产生，是没有区别的。
+```
+
+```alert:info
+**友情提示2：** magnet虽然是标准的URL协议名，但在这里被当做Superspan处理，如果渲染器允许您使用magnet，则会渲染成一个magenet链接。其它标准URL协议名也同理，如果渲染器支持，会以Superspan的形式进行解析，然后输出正确的链接。
+```
+
+和Superblock一样，由于Superspan是可扩展的，所以不同的渲染器，或者在不同的使用场合，可能存在具体的区别，因为渲染器的开发者或者使用了某个渲染器的网站会自己定义一些类型的Superspan。
+关于具体的Superblock用法，可以参考本文档的以下部分：
+
+* 基本Superspan功能
+* 在swzry.com旗下网站支持的Superspan内容
+
 ## Markdown已有的样式功能
 
 ### 纯文本
