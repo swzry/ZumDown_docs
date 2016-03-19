@@ -133,28 +133,23 @@ def foo():
 
 ```code:zumdown
     ```alert
-    标题
-    内容
+    颜色类型为info的警示条（默认）
     ```
 
     ```alert:success
-    颜色类型为success的面板
-    内容
+    颜色类型为success的警示条
     ```
 
     ```alert:info
-    颜色类型为info的面板
-    内容
+    颜色类型为info的警示条
     ```
 
     ```alert:warning
-    颜色类型为warning的面板
-    内容
+    颜色类型为warning的警示条
     ```
 
     ```alert:danger
-    颜色类型为danger的面板
-    内容
+    颜色类型为danger的警示条
     ```
     
 ```
@@ -162,28 +157,23 @@ def foo():
 **显示效果：**
 
 ```alert
-标题
-内容
+颜色类型为info的警示条（默认）
 ```
 
 ```alert:success
-颜色类型为success的面板
-内容
+颜色类型为success的警示条
 ```
 
 ```alert:info
-颜色类型为info的面板
-内容
+颜色类型为info的警示条
 ```
 
 ```alert:warning
-颜色类型为warning的面板
-内容
+颜色类型为warning的警示条
 ```
 
 ```alert:danger
-颜色类型为danger的面板
-内容
+颜色类型为danger的警示条
 ```
 
 ## 注释
@@ -247,23 +237,23 @@ def foo():
 
 **显示效果：**
 
-    ```align:left
-    左对齐
-    ```
+```align:left
+左对齐
+```
 
-    ```align:right
-    右对齐
-    ```
+```align:right
+右对齐
+```
 
-    ```align:center
-    居中
-    ```
+```align:center
+居中
+```
 
-    ```align:justify
-    两端对齐
-    ```
+```align:justify
+两端对齐
+```
 
-    ```align:nowarp
-    不换行
-    ```
+```align:nowarp
+不换行
+```
 
